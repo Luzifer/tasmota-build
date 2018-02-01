@@ -10,6 +10,8 @@ MQTT_USER: '${MQTT_USER}'
 MQTT_PASS: '${MQTT_PASS}'
 MQTT_TOPIC: '"unconfigured"'
 
+TELE_PERIOD: '30'
+
 USE_DOMOTICZ: '!undef'
 USE_EMULATION: '!undef'
 USE_DISCOVERY: '!undef'
