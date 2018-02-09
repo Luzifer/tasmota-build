@@ -13,6 +13,7 @@ MQTT_TOPIC: '"unconfigured"'
 TELE_PERIOD: '30'
 
 USE_DOMOTICZ: '!undef'
+USE_HOME_ASSISTANT: '!undef'
 USE_EMULATION: '!undef'
 USE_DISCOVERY: '!undef'
 
