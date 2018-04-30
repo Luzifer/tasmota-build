@@ -7,7 +7,8 @@ chown:
 
 ci: full-clean default
 
-build_%: download update_user-config_$* venv
+build_%: download venv
+	$(MAKE) update_user-config_$*
 	cd tasmota && ../venv/bin/platformio run -e $*
 	mkdir -p build
 	cp tasmota/.pioenvs/$*/firmware.bin build/$*.bin
