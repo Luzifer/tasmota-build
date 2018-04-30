@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 
 import yaml
 
@@ -25,7 +26,7 @@ def get_line(param, content, comment):
 
 
 def main():
-    cfg = yaml.load(open('config.yml'))
+    cfg = yaml.load(open(sys.argv[1]))
     config = open('tasmota/sonoff/user_config.h').read().split('\n')
 
     for (i, line) in enumerate(config):
