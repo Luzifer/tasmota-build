@@ -1,0 +1,40 @@
+---
+
+STA_SSID1: '${WIFI_SSID}'
+STA_PASS1: '${WIFI_PASS}'
+
+OTA_URL: '${OTA_URL}'
+
+MQTT_HOST: '${MQTT_HOST}'
+MQTT_USER: '${MQTT_USER}'
+MQTT_PASS: '${MQTT_PASS}'
+MQTT_TOPIC: '"unconfigured"'
+
+TELE_PERIOD: '30'
+
+USE_DOMOTICZ: '!undef'
+USE_HOME_ASSISTANT: '!undef'
+HOME_ASSISTANT_DISCOVERY_ENABLE: "0"
+USE_EMULATION: '!undef'
+USE_DISCOVERY: '!undef'
+USE_TIMERS: '!undef'
+USE_RULES: '!undef'
+USE_I2C: '!undef'
+
+USE_MHZ19: '!undef'
+USE_SENSEAIR: '!undef'
+USE_PMS5003: '!undef'
+USE_NOVA_SDS: '!undef'
+USE_PZEM004T: '!undef'
+USE_SERIAL_BRIDGE: '!undef'
+USE_IR_RECEIVE: '!undef'
+USE_SR04: '!undef'
+
+NTP_SERVER1: '"ptbtime1.ptb.de"'
+NTP_SERVER2: '"ptbtime2.ptb.de"'
+
+USE_IR_REMOTE: '!undef'
+USE_WS2812: '!undef'
+USE_ARILUX_RF: '!undef'
+
+...
