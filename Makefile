@@ -1,4 +1,4 @@
-TASMOTA_VERSION=v5.14.0
+TASMOTA_VERSION=v6.1.1
 
 default: build_sonoff build_sonoff-minimal
 

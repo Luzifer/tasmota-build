@@ -13,7 +13,7 @@ MQTT_TOPIC: '"unconfigured"'
 TELE_PERIOD: '30'
 
 USE_DOMOTICZ: '!undef'
-HOME_ASSISTANT_DISCOVERY_ENABLE: "1"
+HOME_ASSISTANT_DISCOVERY_ENABLE: "0"
 USE_EMULATION: '!undef'
 USE_DISCOVERY: '!undef'
 
@@ -23,5 +23,6 @@ NTP_SERVER2: '"ptbtime2.ptb.de"'
 USE_IR_REMOTE: '!undef'
 USE_WS2812: '!undef'
 USE_ARILUX_RF: '!undef'
+USE_RF_FLASH: '!undef'
 
 ...

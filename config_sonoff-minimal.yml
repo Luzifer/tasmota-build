@@ -36,5 +36,6 @@ NTP_SERVER2: '"ptbtime2.ptb.de"'
 USE_IR_REMOTE: '!undef'
 USE_WS2812: '!undef'
 USE_ARILUX_RF: '!undef'
+USE_RF_FLASH: '!undef'
 
 ...
