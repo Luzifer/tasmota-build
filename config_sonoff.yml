@@ -12,6 +12,8 @@ MQTT_TOPIC: '"unconfigured"'
 
 TELE_PERIOD: '30'
 
+USE_DS18x20: '!undef'
+
 USE_DOMOTICZ: '!undef'
 HOME_ASSISTANT_DISCOVERY_ENABLE: "0"
 USE_EMULATION: '!undef'
