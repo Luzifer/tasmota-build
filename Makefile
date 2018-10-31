@@ -7,7 +7,7 @@ chown:
 
 ci: full-clean default
 
-build_%: download venv
+build_%: download
 	$(MAKE) update_user-config_$*
 	cd tasmota && ../venv/bin/platformio run -e $*
 	mkdir -p build
@@ -22,13 +22,3 @@ download:
 
 full-clean: clean
 	rm -rf build
-
-update_user-config_%: venv
-	./venv/bin/python update.py config_$*.yml
-	cd tasmota && git --no-pager diff -w sonoff/user_config.h
-
-venv:
-	virtualenv -p python2 venv
-	./venv/bin/pip install -r requirements.txt
-
-.PHONY: venv
