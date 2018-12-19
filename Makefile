@@ -1,4 +1,4 @@
-TASMOTA_VERSION=v6.3.0
+TASMOTA_VERSION=v6.4.0
 export PLATFORMIO_BUILD_FLAGS=-DUSE_CONFIG_OVERRIDE
 
 default: build_sonoff build_sonoff-minimal
