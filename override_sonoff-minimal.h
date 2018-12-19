@@ -96,6 +96,8 @@
 #undef  USE_NOVA_SDS                             // Add support for SDS011 and SDS021 particle concentration sensor (+0k7 code)
 #undef  USE_SERIAL_BRIDGE                        // Add support for software Serial Bridge (+0k8 code)
 #undef  USE_TUYA_DIMMER                          // Add support for Tuya Serial Dimmer
+#undef  USE_ARMTRONIX_DIMMERS                    // Add support for Armtronix Dimmers (+1k4 code)
+#undef  USE_PS_16_DZ                             // Add support for PS-16-DZ Dimmer
 
 // Power monitoring sensors -----------------------
 #undef  USE_PZEM004T                             // Add support for PZEM004T Energy monitor (+2k code)
