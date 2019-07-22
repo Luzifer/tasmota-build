@@ -12,7 +12,7 @@ build_%: download korvike venv
 	./korvike -i override_$*.h -o tasmota/sonoff/user_config_override.h
 	cd tasmota && ../venv/bin/platformio run -e $*
 	mkdir -p build
-	cp tasmota/.pioenvs/$*/firmware.bin build/$*.bin
+	cp tasmota/.pio/build/$*/firmware.bin build/$*.bin
 
 clean final:
 	rm -rf korvike tasmota venv
