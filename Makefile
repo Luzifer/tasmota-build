@@ -35,4 +35,4 @@ venv:
 .PHONY: venv
 
 manual:
-	vault2env --key=secret/jenkins/build-tasmota -- bash -eux -o pipefail -c 'env | grep -v PATH > ./env && docker run --rm -i --env-file=env -e UID=$(shell id -u) -v "$(CURDIR):/src" -w /src python:2.7 make ci chown final'
+	vault2env --key=secret/jenkins/build-tasmota -- bash -eux -o pipefail -c 'env | grep -v PATH > ./env && docker run --rm -i --env-file=env -e UID=$(shell id -u) -v "$(CURDIR):/src" -w /src python make ci chown final'
