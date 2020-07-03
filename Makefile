@@ -1,7 +1,7 @@
-TASMOTA_VERSION=v6.4.1
+TASMOTA_VERSION=v8.3.1
 export PLATFORMIO_BUILD_FLAGS=-DUSE_CONFIG_OVERRIDE
 
-default: build_sonoff build_sonoff-minimal
+default: build_tasmota
 
 chown:
 	chown -R $(UID) build
@@ -9,10 +9,10 @@ chown:
 ci: full-clean default
 
 build_%: download korvike venv
-	./korvike -i override_$*.h -o tasmota/sonoff/user_config_override.h
+	./korvike -i user_config_override.h -o tasmota/tasmota/user_config_override.h
 	cd tasmota && ../venv/bin/platformio run -e $*
 	mkdir -p build
-	cp tasmota/.pio/build/$*/firmware.bin build/$*.bin
+	cp tasmota/.pioenvs/$*/firmware.bin build/$*.bin
 
 clean final:
 	rm -rf korvike tasmota venv
@@ -29,7 +29,7 @@ korvike:
 	mv korvike_linux_amd64 korvike
 
 venv:
-	virtualenv -p python2 venv
+	virtualenv venv
 	./venv/bin/pip install -r requirements.txt
 
 .PHONY: venv
