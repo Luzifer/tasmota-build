@@ -1,7 +1,7 @@
 TASMOTA_VERSION=v8.3.1
 export PLATFORMIO_BUILD_FLAGS=-DUSE_CONFIG_OVERRIDE
 
-default: build_tasmota
+default: build_tasmota build_tasmota-minimal
 
 chown:
 	chown -R $(UID) build
