@@ -46,6 +46,9 @@
 #undef  CFG_HOLDER
 #define CFG_HOLDER        4617                   // [Reset 1] Change this value to load SECTION1 configuration parameters to flash
 
+#undef  OTA_URL
+#define OTA_URL           "http://assets.luzifer.io/tasmota/tasmota.bin"
+
 // -- Setup your own Wifi settings  ---------------
 #undef  STA_SSID1
 #define STA_SSID1         "{{ env "WIFI_SSID" }}"  // [Ssid1] Wifi SSID
