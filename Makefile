@@ -9,7 +9,7 @@ chown:
 ci: full-clean default
 
 build_%: download korvike venv
-	./korvike -i user_config_override.h -o tasmota/tasmota/user_config_override.h
+	./korvike -i uco_$*.h -o tasmota/tasmota/user_config_override.h
 	cd tasmota && ../venv/bin/platformio run -e $*
 	mkdir -p build
 	cp tasmota/.pioenvs/$*/firmware.bin build/$*.bin
