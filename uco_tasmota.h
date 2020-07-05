@@ -71,7 +71,8 @@
 
 // -- Add more modules ----------------------------
 
-#define USE_BMP
+#define USE_BMP       // Enable support for BME280
+#define USE_MHZ19     // Enable support for MH-Z19B
 
 
 #endif  // _USER_CONFIG_OVERRIDE_H_
